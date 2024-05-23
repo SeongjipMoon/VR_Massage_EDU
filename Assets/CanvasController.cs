@@ -180,11 +180,16 @@ public class CanvasController : MonoBehaviour
             currentCanvas.enabled = false;
         }
 
-        // 자동 전환이 필요한 Canvas인 경우 다음 Canvas로 넘어가기
-        if (autoAdvanceCanvasIndices.Contains(canvases.IndexOf(currentCanvas)))
+        // 자동 전환이 필요한 Canvas가 아닌 경우 현재 캔버스를 계속 표시
+        int currentIndex = canvases.IndexOf(currentCanvas);
+        if (autoAdvanceCanvasIndices.Contains(currentIndex))
         {
             ShowNextCanvas();
         }
+        else
+        {
+            // 특정 캔버스는 계속 표시
+            currentCanvas.enabled = true;
+        }
     }
-
 }
