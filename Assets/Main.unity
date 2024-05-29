@@ -3869,6 +3869,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &555350744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555350745}
+  m_Layer: 0
+  m_Name: Tactsource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &555350745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555350744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.002196014, y: 0.88947415, z: -0.0075725317}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &555667540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2230181010205008780, guid: f91743800f2ab3740ac9db4eedb46f2d, type: 3}
@@ -12043,67 +12074,6 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   smoothValue: 0.1
   modelHeight: 1.67
---- !u!1001 &1482211281
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1441949093026986903, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_Name
-      value: '[bhaptics]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986904, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1441949093026986906, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
-      propertyPath: autoRunBhapticsPlayer
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2129561fd5ef2284086f81f4eb432d8f, type: 3}
 --- !u!1 &1489348812
 GameObject:
   m_ObjectHideFlags: 0
@@ -18358,9 +18328,9 @@ SceneRoots:
   - {fileID: 766394967}
   - {fileID: 998048235}
   - {fileID: 170493977}
-  - {fileID: 1482211281}
   - {fileID: 493980888}
   - {fileID: 646850783}
   - {fileID: 707324893}
   - {fileID: 244011898}
   - {fileID: 782364141}
+  - {fileID: 555350745}
