@@ -10,6 +10,7 @@ public class CanvasController : MonoBehaviour
     public List<AudioClip> voiceClips; // 각 캔버스에 대한 음성 메시지
     public List<int> autoAdvanceCanvasIndices; // 자동 전환이 필요한 Canvas 인덱스
     public List<VideoPlayer> videoPlayers; // 각 캔버스에 대한 VideoPlayer 리스트
+    public List<GameObject> babyObjects; // 각 Canvas에 대응하는 baby 오브젝트 리스트
 
     private Queue<Canvas> canvasQueue = new Queue<Canvas>();
     private Queue<AudioClip> voiceClipQueue = new Queue<AudioClip>();
@@ -146,6 +147,22 @@ public class CanvasController : MonoBehaviour
             {
                 // 음성 메시지가 없을 경우 코루틴 없이 캔버스만 표시
                 currentCoroutine = StartCoroutine(ShowCanvasWithoutVoice());
+            }
+
+            // 모든 baby 오브젝트를 비활성화
+            foreach (GameObject baby in babyObjects)
+            {
+                if (baby != null)
+                {
+                    baby.SetActive(false);
+                }
+            }
+
+            // 현재 Canvas에 대응하는 baby 오브젝트를 활성화
+            int currentIndex = canvases.IndexOf(currentCanvas);
+            if (currentIndex >= 0 && currentIndex < babyObjects.Count && babyObjects[currentIndex] != null)
+            {
+                babyObjects[currentIndex].SetActive(true);
             }
         }
     }
