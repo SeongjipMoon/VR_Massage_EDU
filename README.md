@@ -13,6 +13,7 @@ Oculus Quest2, Tact Glove
 3. Meta Quest Link에 가지고 있는 Oculus Quest2를 연동시킨다.
 4. Oculus Quest를 접속하여 Meta Quest Link를 실행하고 있는 컴퓨터에 Rift를 연결시킨다.
 5. 블루투스 동글을 컴퓨터에 연결하여, Tactglove_L, Tactglove_R을 연동시킨다.
+6. Title.Unity 파일을 열고 실행시킨다.
 
 
 ## 3. 한계
